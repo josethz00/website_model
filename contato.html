@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="../fontawesome-free-5.11.2-web/css/all.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="alertify/css/alertify.min.css" />
+    <link rel="stylesheet" href="alertify/css/themes/default.min.css" />
+    <title>Nudle - Contato</title>
+</head>
+<body>
+<style>
+input:focus{
+    outline: 0;
+}
+
+</style>
+<header class="ok">
+        <div class="container">
+            <div class="menu-topoo">
+                <div class="logo"></div>
+                <nav class="desktop">
+                    <ul>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="">Soluções e Serviços</a></li>
+                        <li><a href="contato.php">Contato</a></li>
+                        <li class="btn-nav"><a id="orcamento" href="">Quero um orçamento!</a></li> 
+                    </ul>
+                </nav>
+                <nav class="mobilee">
+                    <h3><i class="fa fa-bars"></i></h3>
+                    <ul>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="">Soluções e Serviços</a></li>
+                        <li><a href="contato.php">Contato</a></li>
+                        <li class="btn-nav"><a href="">Quero um orçamento!</a></li> 
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </div>
+          
+        </div>
+    </header>
+    <br>
+
+<center><h1>Entre em contato conosco</h1></center>
+<br></br>
+<br></br>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <form id="contact-form"  style="margin-left: auto;
+             margin-right: auto; background-color: rgb(255, 255, 255); width:100% ; max-width: 478px; padding: 15px; box-shadow: rgb(197, 193, 193)  2px 2px 12px;">
+        <div class="form-group center-block">
+          <label for="inputName">Nome</label>
+          <input type="text" class="form-control contact-input" id="inputName"  name="name">
+        </div>
+        <div class="form-group center-block">
+          <label for="inputEmail">Email</label>
+          <input type="email" class="form-control contact-input" id="inputEmail"  name="email">
+        </div>
+        <div class="form-group center-block">
+          <label for="inputMessage">Mensagem</label>
+          <textarea id="inputMessage" class="form-control contact-input" rows="3"  name="message"></textarea>
+        </div>
+        
+        <div class="text-center">
+          <button class="btn btn-default" type="submit" id="email-submit-btn" value="Send">
+            Enviar
+          </button>
+        </div>
+        <span></span>
+      </form>
+    </div>
+  </div>
+</div>
+                
+  
+    
+  
+
+            
+             <script src="alertify/alertify.min.js"></script>
+
+             <script type="text/javascript">
+             $(document).ready(function() {
+              $('#contact-form').submit(function(e) {
+             var name    = document.getElementById('inputName')
+             var email   = document.getElementById('inputEmail')
+             var message = document.getElementById('inputMessage')
+ 
+             if (!name.value || !email.value || !message.value) {
+             alertify.error("Please check your entries");
+             return false;
+             } else {
+             $.ajax({
+                 method: 'POST',
+                 url: 'https://formspree.io/mpzrvrbq',
+                 data: $('#contact-form').serialize(),
+                 datatype: 'json'
+             });
+             e.preventDefault();
+             $(this).get(0).reset();
+             alertify.success("Message sent");
+             }
+         });
+         });
+      
+       
+    </script>
+</body>
+</html>

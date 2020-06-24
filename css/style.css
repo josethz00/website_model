@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI',  Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html, body{
+    background-color: rgb(255, 255, 255);
+}
+h2{
+    color: #12a081;
+}
+.container{
+    max-width: 1400px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+.clear{clear: both;}
+
+.all{
+    background-image: url('../images/bg.jpg');
+    min-height: 450px;
+    padding: 30px 0;
+    background-size: cover;
+    background-position: center;
+}
+.ok{
+ 
+    height: 90px;
+    padding: 30px 0;
+
+    background-image: linear-gradient(to right, #13d8c7, rgb(147, 235, 247));;
+    background-size: cover;
+    background-position: center;
+}
+
+.menu-topo{
+    border-bottom: rgba(255, 255, 255, 0.698) 0.6px solid;
+}
+.menu-topoo{
+
+}
+.logo{
+    background-image: url('../images/logo.png');
+    background-size: 100% 100%;
+    float: left;
+    width: 130px;
+    height: 40px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 11px;
+}
+nav.desktop{
+    float: right;
+}
+nav.desktop ul{
+    list-style-type: none;
+}
+nav.desktop li{
+    display: inline-block;
+    margin: 0 15px;
+}
+nav.desktop a {
+    color: white;
+    text-decoration: none;
+}
+nav.desktop a:hover{
+    color: #465383;
+}
+nav li a#orcamento:hover{
+    color: white;
+}
+nav li.btn-nav:hover{
+    background-color: #13d8c7;
+}
+nav li.btn-nav{
+    padding: 3px 8px;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+nav.mobile{
+    display: none;
+    float: right;
+}
+nav.mobile ul{
+    display: none;
+    background-color: #000000;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    padding: 70px 0 30px 0;
+    text-align: center;
+}
+nav.mobile a {
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+nav.mobile li{
+    padding: 10px 0;
+}
+nav.mobile li.btn-nav{
+    display: inline-block;
+    padding: 10px 10px;
+}
+nav.mobile h3{
+    color: white;
+    cursor: pointer;
+    font-size: 26px;
+    position: relative;
+    z-index: 2;
+}
+nav.mobilee{
+    display: none;
+    float: right;
+    z-index: 5;
+}
+nav.mobilee ul{
+    display: none;
+    background-color: #000000;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    padding: 70px 0 30px 0;
+    text-align: center;
+}
+nav.mobilee a {
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+nav.mobilee li{
+    padding: 10px 0;
+}
+nav.mobilee li.btn-nav{
+    display: inline-block;
+    padding: 10px 10px;
+}
+nav.mobilee h3{
+    color: white;
+    cursor: pointer;
+    font-size: 26px;
+    position: relative;
+    z-index: 2;
+}
+
+div.chamada-header{
+    padding: 110px 0;
+}
+div.chamada-header h2{
+    font-size: 47px;
+    color: white;
+    font-weight: normal;
+    max-width: 800px;
+}
+div.chamada-header p{
+    margin-top: 16px;
+    color: white;
+    font-size: 17px;
+    max-width: 600px;
+}
+div.chamada-header input[type=email]{
+    display: inline-block;
+    border-radius: 20px;
+    background-color: white;
+    width: 237px;
+    height: 35px;
+    border: 0;
+    padding-left: 10px;
+
+}
+div.chamada-header input[type=email]:focus{outline: 0;}
+div.chamada-header form{margin-top: 15px;}
+div.chamada-header input[type=submit]{
+    width: 181px;
+    height: 43px;
+    border-radius: 100px;
+    color: white;
+    cursor: pointer;
+    background-color: #13d8c7;
+    border: 0;
+    transition: 0.4s linear;
+}
+div.chamada-header input[type=submit]:hover{background-color: #12a081;}
+
+section.descricao-enterprise{
+    text-align: center;
+    padding: 30px 0 ;
+}
+section.descricao-enterprise p {
+    display: inline-block;
+    max-width: 680px;
+    font-weight: lighter;
+    font-size: 22px;
+    font-style: italic;
+}
+section.descricao-danki2{
+    padding: 45px 0;
+}
+section.descricao-danki2 > .container{
+    max-width: 960;
+}
+.texto-descricao{
+    float: left;
+    padding: 0 15px;
+    width: 60%;
+}
+.texto-descricao p{
+    color: #6a7c92;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 15px;
+}
+.texto-descricao h3{
+    color: #12a081;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: normal;
+}
+section.descricao-danki2 img{
+    float: left;
+    width: 40%;
+    max-width: 520px;
+}
+section.descricao-danki3{
+    padding: 30px 0 60px 0;
+    
+}
+section.descricao-danki3 > .container{
+    max-width: 960px;
+    background-position-y: -63px;
+    background-size: cover;
+    min-height: 450px;
+    position: relative;
+    background-image: url('../images/ferramentas-de-ux.jpg');
+    background-repeat: no-repeat;
+}
+.box-depoimento{
+    position: absolute;
+    left: 50%;
+    width: 70%;
+    max-width: 506px;
+    padding: 15px 40px;
+    bottom: -20px;
+    box-shadow: 0 8px 20px 0 rgba(200, 200, 200, 0.5);
+    background-color: white;
+}
+.box-depoimento p {
+    font-size: 16px;
+    color: #12a081;
+    font-weight: lighter;
+}
+#orc{
+    text-decoration: none;
+    color: rgb(65, 65, 251);
+}
+
+section.servicos{
+    padding: 25px 0;
+}
+.titulo-servicos{
+    text-align: center;
+}
+.titulo-servicos h3{
+    color: #242424;
+    font-size: 22px;
+    font-weight: normal;
+}
+.flex-servicos{
+    display: flex;
+    flex-wrap:wrap;
+    
+}
+.box-servicos{
+    background-color: rgb(238, 238, 238);
+    width: 30.0%;
+    border-radius: 6px;
+    box-shadow: 0 12px 23px 0 rgba(200, 200, 200, 0.5);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.box-servicos:hover{
+    background-color: rgb(255, 255, 255);
+}
+.box-servicos img{
+    width: 100%;
+    height: 160px;
+}
+section.servicos > .container{
+    max-width: 1100px;
+}
+.box-servicos-wraper{
+    padding: 20px;
+}
+.box-servicos-wraper h2{
+    color: #12a081;
+    font-size: 20px;
+    font-weight: normal;
+}
+.box-servicos-wraper p {
+    margin: 8px 0;
+    line-height: 1.6;
+    font-weight: lighter;
+    font-size: 15px;
+    color: #6a7c92;
+}
+.box-servicos-wraper a {
+    width: 120px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 0.8px solid #6a7c92;
+    color: #6a7c92;
+    transition: .4s linear;
+}
+.box-servicos-wraper a:hover{
+    background-color: #12a081;
+    color: white;
+}
+section.footer{
+    padding: 40px 0;
+    border-top: 1px solid rgba(200, 200, 200, 0.5);
+}
+section.footer >.container{
+    max-width: 1000px;
+}
+.flex-footer{
+    display: flex;
+    flex-wrap:wrap;
+}
+.content{
+    width: 30.0%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.content h4{
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+
+@media screen and (max-width:1000px){
+    nav.desktop{
+        display: none;
+    }
+    nav.mobile{
+        display: block;
+    }
+    nav.mobilee{
+        display: block;
+    }
+    div.chamada-header{
+        text-align: center;
+    }
+    div.chamada-header p {
+        display: inline-block;
+    }
+    div.chamada-header input[type=email]{
+        margin-bottom: 10px;
+    }
+    section.descricao-enterprise p{
+        font-size: 17px;
+    }
+    .box-depoimento{
+        left: 50%;
+        top: 50%;
+        bottom: auto ;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (max-width: 780px){
+    .texto-descricao{width: 100%;display: block;float: none;}
+    section.descricao-danki2 img{
+        margin: 0 auto;
+        max-width: 500px;
+        display: block;
+        margin-top: 10;
+        width: 100%;
+    }
+    .box-servicos{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .content{
+        margin: 0 auto;
+        width: 70%;
+    }
+}
+
+
